@@ -91,7 +91,7 @@ const renderSliders = ( data  ) =>{
         const {id, link, description, title, img} = element
         let data = sliderELementesMap(id, link, description, title, img)
         return data
-    });
+    }).join('');
 
 
     
