@@ -84,9 +84,9 @@ a{
 
 .nav-container > b {
     
-    background-color: black;
-    color: var(--white);
-    padding: 5px;
+    background-color: white;
+    color: black;
+    padding: 30px;
 }
 
 
