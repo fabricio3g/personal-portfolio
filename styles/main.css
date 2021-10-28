@@ -321,8 +321,7 @@ svg > path{
 
 @media (max-width: 680px) {
     
-   
-    
+  
     .nav-container {
         
         position: absolute !important;
@@ -483,7 +482,10 @@ th{
 
 /* CONTACTME POPUP STYEL */
 
-
+ 
+.contactme-popup{
+    transition: .2s ease-out;
+}
 
 .contactme-popup{
     position: relative;
@@ -494,6 +496,7 @@ th{
     background: #EFEFEF;;
     height: 100% !important;
     width: 100%;
+    transform: 1.1;
     justify-content: center;
     align-self: center;
     align-content: center;
