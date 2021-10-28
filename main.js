@@ -5,7 +5,7 @@
 
 
 
-const navbarContainer = document.getElementById('home')
+const navbarContainer = document.getElementById('nav-container')
 
 const contatmeElement = document.getElementById("contactme")
 const contactmePopup = document.getElementById("contactme-popup")
