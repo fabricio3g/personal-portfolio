@@ -1,19 +1,24 @@
 
-// html elemets
+/*
+*   Get html elements
+*/
 
+
+
+const navbarContainer = document.getElementById('home')
 
 const contatmeElement = document.getElementById("contactme")
 const contactmePopup = document.getElementById("contactme-popup")
+const popupContactClose = document.getElementById("popup-contactme-close")
+
+
 const containerWrapperElement = document.getElementById("container-wrapper")
 
-
-// Slider element
 
 const slidersElements = document.getElementById("sliders")
 
 
 
-const popupContactClose = document.getElementById("popup-contactme-close")
 
 
 
@@ -21,6 +26,26 @@ const popupContactClose = document.getElementById("popup-contactme-close")
 
 
 
+const navbarSticky = ()=>{
+
+
+    console.log(window.innerWidth)
+
+
+    if (window.pageYOffset >= 60) {
+        navbarContainer.classList.add("sticky")
+      } else {
+        navbarContainer.classList.remove("sticky");
+      }
+
+    if(window.innerWidth <= 680){
+        navbarContainer.classList.remove("sticky");
+    }
+    
+      
+     
+   
+}
 
 
 
@@ -46,7 +71,9 @@ const contactmeStylePopup = (value) => {
 
 
 
-// Events Functions
+/*
+*   Events Functions
+*/
 
 
 const contatcmeEvent = (e) => {
@@ -67,7 +94,17 @@ const popupContactCloseEvent = (e) => {
 
 
 
-// RenderFunctions
+// Render Functions
+
+
+
+
+
+const showSlidersCards = () => {
+    slidersElements.innerHTML = renderSliders(sliderData)
+}
+
+
 
 const renderSliders = ( data  ) =>{
 
@@ -113,42 +150,58 @@ contatmeElement.addEventListener("click", contatcmeEvent)
 
 
 
-//Data
+/*
+*   Fetch data
+*/
 
 const sliderData = [
     {
         id: 1,
-        img:  "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        title: "TOdo",
-        link: "https://www.google.com",
-        description: "MOngodb "
+        img:  "./assets/img/todo_web.png",
+        title: "Todo",
+        link: "https://github.com/fabricio3g/ToDo-List",
+        description: "Simple todo app hecho con puro javascript"
+    },
+    {
+        id: 2,
+        img:  "/assets/img/MovieDb.png",
+        title: "MovieDb",
+        link: "https://github.com/fabricio3g/movieDB",
+        description: "Buscador de peliculas y series hecho con React y haciendo un fetch atravez de la api de Omdbapi "
+    },
+    {
+        id: 3,
+        img:  "/assets/img/exercise-tracker.png",
+        title: "Exercise tracker",
+        link: "",
+        description: "Una Api para crear ejercicios hecho con Node y Express"
+    },
+    {
+        id: 4,
+        img:  "/assets/img/url-shortener.png",
+        title: "Url shortener",
+        link: "https://github.com/fabricio3g/url_shortener",
+        description: "Acortador de links hecho con Node, Express y un poquito de bootstrap"
     },
     {
         id: 1,
-        img:  "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        title: "TOdo",
-        link: "https://www.google.com",
-        description: "MOngodb "
-    },
-    {
-        id: 1,
-        img:  "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        title: "TOdo",
-        link: "https://www.google.com",
-        description: "MOngodb "
-    },
-    {
-        id: 1,
-        img:  "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        title: "TOdo",
-        link: "https://www.google.com",
-        description: "MOngodb "
+        img:  "/assets/img/pomodoro-app.png",
+        title: "Pomodoro App",
+        link: "https://github.com/fabricio3g/Pomodoro-React",
+        description: "Pomodoro App hecho con React<br><i>hace sonidito cuando termina el tiempo</i>"
     }
 ]
 
 
 
-slidersElements.innerHTML = renderSliders(sliderData)
 
 
 
+
+// Window functions
+
+
+
+window.onload = showSlidersCards
+
+window.onscroll = navbarSticky
