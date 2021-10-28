@@ -174,14 +174,14 @@ const sliderData = [
         img:  "./assets/img/exercise-tracker.png",
         title: "Exercise tracker",
         link: "",
-        description: "Una Api para crear ejercicios hecho con Node y Express"
+        description: "Una Api para crear ejercicios hecho con Node, Express y MongoDb"
     },
     {
         id: 4,
         img:  "./assets/img/url-shortener.png",
         title: "Url shortener",
         link: "https://github.com/fabricio3g/url_shortener",
-        description: "Acortador de links hecho con Node, Express y un poquito de bootstrap"
+        description: "Acortador de links hecho con Node, Express, MongoDb y un poquito de bootstrap"
     },
     {
         id: 1,
