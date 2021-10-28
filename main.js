@@ -164,28 +164,28 @@ const sliderData = [
     },
     {
         id: 2,
-        img:  "/assets/img/MovieDb.png",
+        img:  "./assets/img/MovieDb.png",
         title: "MovieDb",
         link: "https://github.com/fabricio3g/movieDB",
         description: "Buscador de peliculas y series hecho con React y haciendo un fetch atravez de la api de Omdbapi "
     },
     {
         id: 3,
-        img:  "/assets/img/exercise-tracker.png",
+        img:  "./assets/img/exercise-tracker.png",
         title: "Exercise tracker",
         link: "",
         description: "Una Api para crear ejercicios hecho con Node y Express"
     },
     {
         id: 4,
-        img:  "/assets/img/url-shortener.png",
+        img:  "./assets/img/url-shortener.png",
         title: "Url shortener",
         link: "https://github.com/fabricio3g/url_shortener",
         description: "Acortador de links hecho con Node, Express y un poquito de bootstrap"
     },
     {
         id: 1,
-        img:  "/assets/img/pomodoro-app.png",
+        img:  "./assets/img/pomodoro-app.png",
         title: "Pomodoro App",
         link: "https://github.com/fabricio3g/Pomodoro-React",
         description: "Pomodoro App hecho con React"
