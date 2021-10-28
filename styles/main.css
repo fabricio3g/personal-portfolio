@@ -39,8 +39,9 @@ a{
     background-color: black;
     width: 100%;
     padding:20px;
-    height: 5rem;
-   
+    height: 5rem;    
+    scale: 1.0;
+    transition: all .5s ease-out;
 }
 
 
@@ -315,9 +316,17 @@ svg > path{
 /* MEDIA QUERY*/
 
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
     
    
+    
+    .nav-container {
+        
+        position: absolute !important;
+        scale: none;
+        transition: none;
+    }
+
     .home{
         
         align-items: flex-start;
@@ -358,12 +367,8 @@ svg > path{
         width: 100%;
     }
 
-    table, th, td{
-        
+    th, td{
         text-align: center;
-        
-        padding: 1.0rem !important;
-        width: 1.0rem !important;
     }
 
     
@@ -381,6 +386,12 @@ svg > path{
 
 
 
+.education-container > table > tr > td {
+    background-color: #333 !important;
+    height: 1rem;
+    width: .2rem !important;
+}
+
 
 .education-container{
     display: flex;
@@ -396,36 +407,62 @@ svg > path{
     padding: 50rem 0 0 0 0;
 }
 
+ th, td{
 
-table, th, td{
-
-    padding: 1rem;
+    padding: 1.5rem;
     width: 54rem;
     
 }
 
 
-th { 
-    border: 1px solid black ;
-    background: #333; 
-    border-radius: 1rem 0 1rem 0 ;
-    color: white; 
+th{ 
+   
+    background: rgb(255, 255, 255);  
+    border: 1px dotted black;
+    cursor: default;
+    border-radius: .5rem;
+    color: black; 
     font-weight: bold; 
   }
 
-tr{
-    border-bottom: 1px solid black;
-}
-  
+  .education-container > table > tbody > tr > td > a> svg {
+    width: 1.2rem;
+    
+  }
+
+  .education-container > table > tbody > tr > td > a {
+    color: black;
+    
+  }
+
+  .education-container > table > tbody > tr > td:last-child{
+    background-color: rgb(243, 243, 243);
+    border-radius: 1.3rem;
+    
+  }
+
+  .education-container > table > tbody > tr > td:last-child:hover{
+    background-color: rgb(197, 196, 196);
+    cursor: pointer;
+    border-radius: 1.2rem;
+    
+  }
+
+  .education-container > table > tbody > tr > td:first-child{
+    background-color: rgb(248, 247, 247);
+    border-radius: 1.2rem;
+    
+  }
 
 
 
 .education-container > table {
     
-    margin: 10rem auto 10rem auto;
+    margin: 15rem auto 10rem auto;
 
 
 }
+
 
 
 
@@ -496,13 +533,14 @@ tr{
     margin: auto;
     background: var(--white);
     border-radius: 0 1.5rem;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
 }
 
 .contactme-popup > .container-popup > section{
     display: flex;
     margin: auto ;
+    padding: 2rem;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -511,7 +549,9 @@ tr{
 }
 
 .contactme-popup > .container-popup > section > ul{
+    
     list-style: none;
+    margin: 0 auto;
     margin-top: 30px;
 }
 
@@ -519,8 +559,14 @@ tr{
 
 .contactme-popup > .container-popup > section >ul > li{
     list-style: none;
+    
     cursor: pointer;
     margin: 5px 0 5px 0;
+}
+
+
+.contactme-popup > .container-popup > section >ul > li > a{
+    color: rgb(61, 61, 255);
 }
 
 
@@ -533,3 +579,12 @@ footer{
 }
 
 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    transition: all .5s ease-out;
+    scale: 1.2;
+  }
