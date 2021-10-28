@@ -142,7 +142,7 @@ a{
     justify-content: center;
     align-self: center;
     align-items:center ;
-    margin: 10rem auto 10rem auto;
+    height: 20rem !important;
     padding: 20rem auto 5rem auto;
     margin: 1rem;
 }
@@ -162,6 +162,8 @@ a{
 svg > path{
     fill: black !important;
 }
+
+
 
 /* HOVER SOCIAL MEDIA ICONS*/
 
@@ -329,7 +331,7 @@ svg > path{
     }
 
     .home{
-        
+        margin-top: 10rem;
         align-items: flex-start;
         padding: 0;
     }
