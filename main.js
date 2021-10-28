@@ -188,7 +188,7 @@ const sliderData = [
         img:  "/assets/img/pomodoro-app.png",
         title: "Pomodoro App",
         link: "https://github.com/fabricio3g/Pomodoro-React",
-        description: "Pomodoro App hecho con React<br><i>hace sonidito cuando termina el tiempo</i>"
+        description: "Pomodoro App hecho con React"
     }
 ]
 
