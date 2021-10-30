@@ -36,7 +36,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: black;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     width: 100%;
     padding:20px;
     height: 5rem;    
@@ -84,8 +85,6 @@ a{
 }
 
 .nav-container > b {
-    
-    background-color: white;
     color: black;
     padding: 30px;
 }
@@ -96,6 +95,7 @@ a{
 .nav-container > ul > li:hover{
     width: [object Object]px; 
 	height: [object Object]px; 
+    
 	background: #E1E4E7; 
     color: black;
     cursor: pointer;
@@ -110,7 +110,7 @@ a{
     color: black;
     cursor: pointer;
     transition: .2s ease-in;
-}
+} 
 
 
 .nav-container > ul > li:hover > a{
