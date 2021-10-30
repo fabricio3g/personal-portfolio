@@ -112,46 +112,6 @@ const xhrSliderResponse = () => {
   });
 };
 
-// const sliderData = [
-//   {
-//     id: 1,
-//     img: "./assets/img/todo_web.png",
-//     title: "Todo",
-//     link: "https://github.com/fabricio3g/ToDo-List",
-//     description: "Simple todo app hecho con puro javascript",
-//   },
-//   {
-//     id: 2,
-//     img: "./assets/img/MovieDb.png",
-//     title: "MovieDb",
-//     link: "https://github.com/fabricio3g/movieDB",
-//     description:
-//       "Buscador de peliculas y series hecho con React y haciendo un fetch atravez de la api de Omdbapi ",
-//   },
-//   {
-//     id: 3,
-//     img: "./assets/img/exercise-tracker.png",
-//     title: "Exercise tracker",
-//     link: "",
-//     description:
-//       "Una Api para crear ejercicios hecho con Node, Express y MongoDb",
-//   },
-//   {
-//     id: 4,
-//     img: "./assets/img/url-shortener.png",
-//     title: "Url shortener",
-//     link: "https://github.com/fabricio3g/url_shortener",
-//     description:
-//       "Acortador de links hecho con Node, Express, MongoDb y un poquito de bootstrap",
-//   },
-//   {
-//     id: 1,
-//     img: "./assets/img/pomodoro-app.png",
-//     title: "Pomodoro App",
-//     link: "https://github.com/fabricio3g/Pomodoro-React",
-//     description: "Pomodoro App hecho con React",
-//   },
-// ];
 
 // Window functions
 
