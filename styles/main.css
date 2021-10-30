@@ -395,6 +395,19 @@ svg > path{
 }
 
 
+.education-container{
+    display: flex;
+    width: 100%;
+    
+}
+
+
+.education-container{
+    display: flex;    
+    flex-direction: column;
+    width: 100%;
+    padding: 50rem 0 0 0 0;
+}
 
  th, td{
 
@@ -407,11 +420,11 @@ svg > path{
 th{ 
    
     background: rgb(255, 255, 255);  
-    
+    border: 1px dotted black;
     cursor: default;
-    font-family: 'Courier New', Courier, monospace;
+    border-radius: .5rem;
     color: black; 
-    font-weight: 400; 
+    font-weight: bold; 
   }
 
   .education-container > table > tbody > tr > td > a> svg {
@@ -447,7 +460,7 @@ th{
 
 .education-container > table {
     
-    margin: 5rem auto 10rem auto;
+    margin: 15rem auto 10rem auto;
 
 
 }
