@@ -457,7 +457,15 @@ th {
 /* Footer */
 
 footer {
-  margin: auto auto 0 auto;
+  padding: 0 0 15rem 0;
+  height: 10rem;
+  width: 100%;
+
+}
+
+footer > h4{
+    text-align: center;
+    margin: auto auto 0 auto;
 }
 
 .sticky {
