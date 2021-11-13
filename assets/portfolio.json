@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img":  "https://github.com/fabricio3g/tab-tracker/raw/main/preview/preview.gif?raw=true,
+        "img":  "https://github.com/fabricio3g/tab-tracker/raw/main/preview/preview.gif?raw=true",
         "title": "Tab tracker",
         "link": "https://github.com/fabricio3g/tab-tracker",
         "description": "Anota tus tablaturas de guitarra, esta hecho con Vue, Node con express, autenticacion con Jwt"
