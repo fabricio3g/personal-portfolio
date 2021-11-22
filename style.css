@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body{
+    background: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*
+    [ A ]
+*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav_wrapper{
+    padding: 2.5rem;
+    display: flex;
+    color: #1E1E5D !important;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav_ul{
+    list-style: none;
+    width: auto;
+}
+
+.nav_ul > li{
+    margin-left: 3rem;
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: 2px solid #F5F9FC;
+}
+
+.nav_ul  > li > a > small{
+    color: #FF6584;
+}
+
+
+.nav_ul > li:hover{
+    border-bottom: 2px solid #FF6584;
+    cursor: pointer;
+}
+
+.icon-name{
+    
+    background: #FFFFFF;
+    border-bottom: #FF6584 1px solid;
+}
+
+
+.home{
+    display: flex;
+    margin: 0 auto;
+    width: 50rem;
+    justify-content: center;
+    height: 100%;
+    flex-direction: row;
+}
+
+.home-information{
+    display: flex;
+    width: 20rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-home{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    width: 20rem;
+    height: auto;
+    z-index: -1;
+}
+
+.home_name{
+    color:#1E1E5D;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+}
+
+.home_name > b{
+    border-bottom: 2px solid #FF6584;
+}
+
+.home_social_media{
+    margin-top: .8rem;
+    list-style: none;
+}
+
+.home_social_media > li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 25px;
+}
+.home_social_media > li:hover{
+    color: #FF6584;
+    cursor: pointer;
+}
+
+
+
+.portfolio{
+    display:flex;
+    width: 100%;
+    color: #1E1E5D;
+    flex-direction: column;
+    background: #F5F9FC;
+    padding-bottom: 20rem;
+    height: auto;
+    
+}
+
+.portfolio > .portfolio-title{
+    margin: 5rem auto;
+    border-bottom: 1px solid #FF6584;
+    
+}
+
+
+.card-container{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.card{
+    display: inline-block;
+    height: 40rem;
+    margin: 1.5rem;
+    width: 30rem;
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.15);
+}
+
+.card-img{
+    border-radius: 1.5rem;
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}   
+
+
+.card-content{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-content > p{
+    font-size: x-large;
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+}
+
+.card-content > ul {
+    list-style: none;
+    margin: 0 auto;
+}
+.card-content > ul > li{
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 2rem;
+   
+}
+
+.card-content > ul > li:hover{
+    color: #FF6584;
+    cursor: pointer;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    height: 50rem;
+    width: 100%;
+}
+
+.about-title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-title > h1{
+    border-bottom: 3px solid #FF6584;
+    margin-top: 5rem;
+}
+
+.about-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50rem;
+    margin-top: 5rem !important;
+    margin: 0 auto;
+
+}
+
+.about-card > p{
+    font-size: x-large;
+}
+
+.about-card > h2{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-skills > ul{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.about-skills > ul > li{
+    margin-top: 2rem;
+    margin: 1rem;
+    display: inline-block;
+    list-style: none;
+    color: white;
+    background: #1E1E5D;
+    padding: 1.5rem;
+}
+
+
+.about-skills > ul > li:hover{
+    background: #FF6584;
+    color: #fff;
+    cursor: default;
+}
+
+.about-text{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.cv{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
