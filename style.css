@@ -109,8 +109,10 @@ a{
     display: inline-block;
     margin: 10px;
     font-size: 25px;
+    transition: ease-in .2s;
 }
 .home_social_media > li:hover{
+    transition: ease-in .2s;
     color: #FF6584;
     cursor: pointer;
 }
@@ -123,34 +125,48 @@ a{
     width: 12rem;
     margin: 1rem 0 0 0;
     padding: .5rem;
+    transition: ease-in .2s;
 }
 
-
 .home-resume-btn:hover{
-    background: #1E1E5D;
+    background: #6060D8;
     cursor: pointer;
+    transition: ease-in .2s;
 }
 
 
 .portfolio{
     display:flex;
     width: 100%;
-    color: #1E1E5D;
+    margin: 0 auto;
+    background: #FDE3BE;
     flex-direction: column;
     padding-bottom: 5rem;
     height: auto;
-    background: #1E1E5D;
+    clip-path: polygon(0% 3%, 0% 100%, 100% 97%, 100% 0%);
 }
 
 .portfolio > .portfolio-title{
     margin: 3rem auto;
+    font-weight: 800;
     color: #1E1E5D;
-    padding: 1rem;
+    border: #6060D8 2px solid;
     background: #FFFFFF;
+    padding: 1rem;
+    -webkit-box-shadow: 12px 10px 0px 0px #6060D8;
+    -moz-box-shadow: 12px 10px 0px 0px #6060D8;
+    box-shadow: 12px 10px 0px 0px #6060D8;
+    transition: ease-in .2s;
+    cursor: default;
 }
 
-.portfolio > .portfolio-title > h1 {
-    border-bottom: 1px solid #FF6584;
+
+
+.portfolio > .portfolio-title:hover{
+    -webkit-box-shadow: -7px 11px 0px 0px #6060D8;
+    -moz-box-shadow: -7px 11px 0px 0px #6060D8;
+    box-shadow: -7px 11px 0px 0px #6060D8;
+    transition: ease-in .2s;
 } 
 
 
@@ -169,22 +185,27 @@ a{
     height: auto;
     margin: 1.5rem;
     padding: .5rem;
-    width: 30rem;
+    width: 25rem;
     background: #FFFFFF;
+    border: 1px solid #6060D8;
     transition: ease-in .2s;
-    -webkit-box-shadow: -1px 10px 93px -49px rgba(0,0,0,1);
-    -moz-box-shadow: -1px 10px 93px -49px rgba(0,0,0,1);
-    box-shadow: -1px 10px 93px -49px rgba(0,0,0,1);
 }
 
 .card:hover{
-    transform: scale(1.05);
+    -webkit-box-shadow: 12px 10px 0px 0px #6060D8;
+    -moz-box-shadow: 12px 10px 0px 0px #6060D8;
+    box-shadow: 12px 10px 0px 0px #6060D8;
+}
+
+.card:hover{
+    transform: scale(1.01);
 }
 
 .card-img{
-    height: auto;    
+    height: 20rem;    
     width: 100%;
     object-fit: cover;
+    border: 1px solid #6060D8;
 }   
 
 
@@ -195,6 +216,7 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 2rem;
     
 }
 
@@ -206,7 +228,7 @@ a{
 }
 
 .card-content > h1{
-    font-size: 20px;
+    font-size: 18px;
     margin: 1rem;
  
 }
@@ -248,7 +270,6 @@ a{
 }
 
 .about-title > h1{
-    border-bottom: 3px solid #FF6584;
     margin-top: 5rem;
 }
 
@@ -287,14 +308,13 @@ a{
 .about-skills > ul > li{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
+    font-weight: 800;
+    border: 1px solid #6060D8;
     display: inline-block;
+    margin: .2rem;
     list-style: none;
-    color: white;
-    background: #1E1E5D;
     padding: 1.5rem;
     font-size: 1rem;
-    border: 2px solid #FFFFFF;
 }
 
 
@@ -308,9 +328,24 @@ a{
 .about-text{
     font-family: 'Courier New', Courier, monospace;
     padding-top: 3rem;
-    width: 50rem;
+    width: 100%;
     margin: 0 auto;
     text-align: justify;
+    background: #FF6584;
+    clip-path: polygon(0% 3%, 0% 100%, 100% 97%, 100% 0%);
+    padding: 10rem;
+    color: #fff;
+   
+}
+
+.about-text > h2{
+    text-align: center;
+}
+
+.about-text > p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .cv{
@@ -339,8 +374,14 @@ a{
     padding: 1.5rem;
 }
 .about-education > ul > li > a{
-    padding-right: 2rem;
+    padding-right: 1.3rem;
 }
+
+.about-education > ul > li > a:hover{
+    padding-right: 1.3rem;
+    color: #FF6584;
+}
+
 
 .about-education > ul > li > small{
     justify-items: self-start;
@@ -354,7 +395,9 @@ a{
 }
 
 
-
+.hamburger-nav{
+    display: none;
+}
 
 
 /* Media querys */
@@ -362,13 +405,13 @@ a{
 @media (max-width: 680px) {
   
     .home{
-        
+        margin-bottom: 14rem;
     }  
     
     
-    .home-information{
-       font-size: 15px !important;
-        margin: 2rem auto;
+    .home-information > p{
+       font-size: 20px !important;
+
     }
     .image-home{
         height: 10rem;
@@ -389,11 +432,24 @@ a{
         color: white;
         margin: 90px auto;
         padding: 5rem;
-        font-size: 15px !important;
+        font-size: 23px !important;
+        clip-path: polygon(0% 3%, 0% 100%, 100% 97%, 100% 0%);
     }
 
     .about-education > ul > li{
         font-size: 15px;
+    }
+
+    .hamburger-nav{
+        display: block;
+        cursor: pointer;
+        font-size: 1.1rem;
+        border: 1px solid #FF6584;
+        padding: .2rem;
+    }
+
+    .nav_ul{
+        display: none;
     }
 
 }
