@@ -205,7 +205,7 @@ a{
     height: 20rem;    
     width: 100%;
     object-fit: cover;
-    border: 1px solid #6060D8;
+    border: 5px solid #6060d873;
 }   
 
 
@@ -271,6 +271,20 @@ a{
 
 .about-title > h1{
     margin-top: 5rem;
+    background: #fff;
+    border: 2px solid #6060D8;
+    padding: 1.5rem;
+    -webkit-box-shadow: 12px 10px 0px 0px #6060D8;
+    -moz-box-shadow: 12px 10px 0px 0px #6060D8;
+    box-shadow: 12px 10px 0px 0px #6060D8;
+}
+
+.about-title > h1:hover{
+    cursor: default;
+    -webkit-box-shadow: -7px 11px 0px 0px #6060D8;
+    -moz-box-shadow: -7px 11px 0px 0px #6060D8;
+    box-shadow: -7px 11px 0px 0px #6060D8;
+    transition: ease-in .2s;
 }
 
 .about-card{
