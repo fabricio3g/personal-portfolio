@@ -470,9 +470,10 @@ footer > div{
         background: #FF6584;
         width: 100%;
         color: white;
+        text-align: justify;
         margin: 90px auto;
-        padding: 5rem;
-        font-size: 23px !important;
+        padding: 2rem;
+        font-size: 15px !important;
         clip-path: polygon(0% 3%, 0% 100%, 100% 97%, 100% 0%);
     }
 
