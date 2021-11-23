@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: 0;
+    
 }
 
 *, *:before, *:after {
@@ -16,6 +17,9 @@ body{
 /*
     [ A ]
 */
+.container-wrapper{
+    width: 100%;
+}
 
 a{
     text-decoration: none;
@@ -29,6 +33,7 @@ a{
     color: #1E1E5D !important;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 .nav_ul{
@@ -62,11 +67,12 @@ a{
 
 .home{
     display: flex;
-    margin: 0 auto;
-    width: 50rem;
+    margin: 0 auto 5rem auto;
+    width: 80%;
     justify-content: center;
     height: 100%;
     flex-direction: row;
+    
 }
 
 .home-information{
@@ -77,9 +83,9 @@ a{
 }
 
 .image-home{
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 5rem;
-    width: 20rem;
+    width: 15rem;
     height: auto;
     z-index: -1;
 }
@@ -109,6 +115,21 @@ a{
     cursor: pointer;
 }
 
+.home-resume-btn{
+    border: none;
+    background: #FF6584;
+    color: white;
+    font-size: larger;
+    width: 12rem;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+}
+
+
+.home-resume-btn:hover{
+    background: #1E1E5D;
+    cursor: pointer;
+}
 
 
 .portfolio{
@@ -116,43 +137,52 @@ a{
     width: 100%;
     color: #1E1E5D;
     flex-direction: column;
-    background: #F5F9FC;
-    padding-bottom: 20rem;
+    padding-bottom: 5rem;
     height: auto;
-    
+    background: #1E1E5D;
 }
 
 .portfolio > .portfolio-title{
-    margin: 5rem auto;
-    border-bottom: 1px solid #FF6584;
-    
+    margin: 3rem auto;
+    color: #1E1E5D;
+    padding: 1rem;
+    background: #FFFFFF;
 }
+
+.portfolio > .portfolio-title > h1 {
+    border-bottom: 1px solid #FF6584;
+} 
 
 
 .card-container{
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
+    width: 80%;
     height: auto;
     justify-content: center;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .card{
-    display: inline-block;
+    flex-direction: row;
     height: 40rem;
     margin: 1.5rem;
     width: 30rem;
-    border-radius: 1.5rem;
-    background: #fff;
-    box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.15);
-    -webkit-box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.15);
-    -moz-box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.15);
+    background: #FFFFFF;
+    transition: ease-in .2s;
+    -webkit-box-shadow: -1px 10px 93px -49px rgba(0,0,0,1);
+-moz-box-shadow: -1px 10px 93px -49px rgba(0,0,0,1);
+box-shadow: -1px 10px 93px -49px rgba(0,0,0,1);
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .card-img{
-    border-radius: 1.5rem;
-    height: 25rem;
+    height: 25rem;    
+    padding: 1rem;
     width: 100%;
     object-fit: cover;
 }   
@@ -161,9 +191,11 @@ a{
 .card-content{
     margin: 0 auto;
     display: flex;
+    font-weight: 800;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .card-content > p{
@@ -171,6 +203,7 @@ a{
     text-align: center;
     align-self: center;
     padding: 1rem;
+    cursor: default;
 }
 
 .card-content > ul {
@@ -179,13 +212,19 @@ a{
 }
 .card-content > ul > li{
     display: inline-block;
-    font-size: 2.5rem;
-    margin: 2rem;
-   
+    font-size: .2rem;
+    margin: 1rem;
+    text-align: center;
+    padding: .6rem;
+    width: 4rem;
+    color: #1E1E5D;
+    background: #FFFFFF;
 }
 
+
 .card-content > ul > li:hover{
-    color: #FF6584;
+    color: #fff;
+    background: #FF6584;
     cursor: pointer;
 }
 
@@ -194,7 +233,7 @@ a{
     display: flex;
     flex-direction: column;
     background: #ffffff;
-    height: 50rem;
+    height: auto;
     width: 100%;
 }
 
@@ -213,7 +252,7 @@ a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 50rem;
+    width: 100%;
     margin-top: 5rem !important;
     margin: 0 auto;
 
@@ -225,23 +264,33 @@ a{
 
 .about-card > h2{
     margin-top: 5rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
+}
+
+.about-skills{
+    margin: auto;
 }
 
 .about-skills > ul{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 2rem auto;
 }
 .about-skills > ul > li{
-    margin-top: 2rem;
-    margin: 1rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
     display: inline-block;
     list-style: none;
     color: white;
     background: #1E1E5D;
     padding: 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #FFFFFF;
 }
 
 
@@ -249,11 +298,14 @@ a{
     background: #FF6584;
     color: #fff;
     cursor: default;
+    
 }
 
 .about-text{
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 3rem;
+    padding-top: 3rem;
+    width: 50rem;
+    margin: 0 auto;
     text-align: justify;
 }
 
@@ -263,3 +315,76 @@ a{
     justify-content: center;
 }
 
+
+.about-education{
+    display: flex;
+    text-align: start;
+    margin: 5rem auto;
+}
+
+.about-education > ul{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+.about-education > ul > li{
+    font-size: x-large;
+    padding: 1.5rem;
+}
+.about-education > ul > li > a{
+    padding-right: 2rem;
+}
+
+.about-education > ul > li > small{
+    justify-items: self-start;
+    color: #FF6584;
+    margin-right: 1rem;
+}
+
+.courses{
+    display: flex;
+    margin-top: 5rem;
+}
+
+
+
+
+
+/* Media querys */
+
+@media (max-width: 680px) {
+  
+    .home{
+        
+    }  
+    
+    
+    .home-information{
+       font-size: 15px !important;
+        margin: 2rem auto;
+    }
+    .image-home{
+        height: 10rem;
+        width: 10rem;
+        margin: 0 auto;
+    }
+    .about-card > h2{
+        font-size: 18px;
+    }
+    .about-skills > ul > li{
+        font-size: 15px;
+        padding: .5rem;
+    }
+    .about-text{
+        font-size: 15px !important;
+        width: 80%;
+    }
+
+    .about-education > ul > li{
+        font-size: 15px;
+    }
+
+}

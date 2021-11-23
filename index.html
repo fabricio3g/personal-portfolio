@@ -5,104 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0-10/css/all.css" integrity="sha512-Dj9pt3sZROOuTTs9S89ykGZeu1XQgWKg3DVpu5tZALApsrWdd3tnVjTclUuVONaHM4O8GgCnjSbHlTKXrd2OWg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fabricio Medrano</title>
 </head>
 <body>
 
 
-<div class="nav_wrapper">
-    <div class="icon-name">[ DEV ]</div>
-    
-    <ul class="nav_ul">
-        <li><a href="#home"><small>01. </small>Home</a></li>
-        <li><a href="#portfolio"><small>02. </small>Portfolio</a></li>
-        <li><a href="#about"><small>03. </small>About Me</a></li>
-        <li><small>04. </small>Blog </li>
-        <li class="choice_language">
-            Spanish
-        </li>
-    </ul>
-</div>
+<div class="container-wrapper">
 
-<div class="home" id="home">
-        <div class="home-information">
-            <p class="home_name">Hello, i'm <b>Fabricio</b></p>
-            <p><mark>Self taught</mark> Developer</p>
-            <ul class="home_social_media">
-                <li><i class="fab fa-linkedin-in"></i></li>
-                <li><i class="fab fa-github"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-            </ul>
-            
-        </div>
-        <img class="image-home" src="./Avatar.jpg" alt="">
-</div>
+    <div class="nav_wrapper">
+        <div class="icon-name">[ DEV ]</div>
 
-
-
-<div class="portfolio" id="portfolio">
-    
-    <div class="portfolio-title">
-        <h1>Portfolio</h1>
+        <ul class="nav_ul">
+            <li><a href="#home"><small>01. </small>Home</a></li>
+            <li><a href="#portfolio"><small>02. </small>Portfolio</a></li>
+            <li><a href="#about"><small>03. </small>About Me</a></li>
+            <li><small>04. </small>Blog </li>
+            <li class="choice_language">
+                Spanish
+            </li>
+        </ul>
     </div>
-    <div class="card-container">
-        <div class="card">
-            <img class="card-img" src="https://github.com/fabricio3g/tab-tracker/raw/main/preview/preview.gif?raw=true" alt="">
-            <div class="card-content">
-                <ul>
-                    <li><a href="https://github.com/fabricio3g/tab-tracker" target="_blank"> <i class="fab fa-github"></i></a></li>
+
+    <div class="home" id="home">
+            <div class="home-information">
+                <p class="home_name">Hello, i'm <b>Fabricio</b></p>
+                <p><mark>Self taught</mark> Developer</p>
+                <ul class="home_social_media">
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
                 </ul>
-                <p>Tab Tracker made with Vue and sqlite with NodeJs</p>
+                <button class="home-resume-btn"><b>Download resume</b></button>
+            </div>
+            <img class="image-home" src="./Avatar.jpg" alt="">
+    </div>
+
+
+
+    <div class="portfolio" id="portfolio">
+
+        <div class="portfolio-title">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img class="card-img" src="https://github.com/fabricio3g/personal-portfolio/blob/main/old_template/assets/img/tabtacker-capture.jpg?raw=true" alt="">
+                <div class="card-content">
+                    <ul>
+                        <li><a href="https://github.com/fabricio3g/tab-tracker" target="_blank"> <i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <h1 class="title-card">Tab Tracker</h1>
+                    <p>Made with Vue and sqlite with NodeJs</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="https://github.com/fabricio3g/twitter-clone/blob/main/preview/twitter-clone.jpg?raw=true" alt="">
+                <div class="card-content">
+                    <ul>
+                        <li><a href="https://github.com/fabricio3g/twitter-clone" target="_blank"> <i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <h1>Twitter Clone</h1>
+                    <p>For now is just the front end made in React with Styled Component</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://github.com/fabricio3g/personal-portfolio/blob/main/old_template/assets/img/exercise-tracker.png?raw=true" alt="">
+                <div class="card-content">
+                    <ul>
+                        <li><a href="https://github.com/fabricio3g/exercise-tracker" target="_blank"> <i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <h1>Exercise Tracker</h1>
+                    <p>Exercise Tracker, made with NodeJs</p>
+                </div>
+            </div>
+    </div>
+
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-title">
+            <h1>About me</h1>
+        </div>
+        <div class="about-card">
+            <h2>Nestor Fabricio - Medrano</h2> <br/>
+
+            <p class="about-text">I'm currently 
+            studying at <b>UNR- Facultad de Ciencias Medicas </b>, during the COVID Lockdown, 
+            i ended up learning web development, since i was young i love computer but i never know 
+            the existence of programing until the past to years.</p>
+            <h2>Skills</h2>
+            <div class="about-skills">
+                <ul>
+                    <li>Javascript</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Node</li>
+                    <li>C</li>
+                    <li>Python</li>
+                </ul>
+            </div><br>
+
+            <div class="about-education">
+                <hr>
+                <ul>
+                    <li><hr></li>
+                    <li><h2>[ Education ]</h2></li>
+                    <li><small> 2017 </small>Escuela Normal Superior Osvaldo Magnasco</li>
+                    <li><small> 2017 -   </small>Universidad Nacional de Rosario</li>
+                    <li><h2 class="courses">[ Courses ]</h2></li>
+                    <li><a href=""><i class="fas fa-external-link-alt"></i></a><small>2020 | </small> Responsive Web Desing - FCC</li>
+                    <li><a href=""><i class="fas fa-external-link-alt"></i></a><small>2020 | </small> Javascript Algorithms and Data Structures - FCC</li>
+                    <li><a href=""><i class="fas fa-external-link-alt"></i></a><small>2020 | </small>Front-End Development Libraries - FCC</li>
+                    <li><a href=""><i class="fas fa-external-link-alt"></i></a> <small>2020 | </small> Become a Software Developer - Linkedin Learning</li>
+                    <li><a href=""><i class="fas fa-external-link-alt"></i></a> <small>2020 | </small> C programming for Beginners: Theory and Practice</li>
+                    <li><a href=""><i class="fas fa-external-link-alt"></i></a> <small>2021 | </small> API and Microservices - FCC</li>
+                    <li><hr></li>
+                </ul>
+                <hr>
             </div>
         </div>
 
-        <div class="card">
-            <img class="card-img" src="https://github.com/fabricio3g/tab-tracker/raw/main/preview/preview.gif?raw=true" alt="">
-            <div class="card-content">
-                <ul>
-                    <li><a href="https://github.com/fabricio3g/tab-tracker" target="_blank"> <i class="fab fa-github"></i></a></li>
-                </ul>
-                <p>Twitter Clone, for now is just the front end</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img" src="https://github.com/fabricio3g/exercise-tracker" alt="">
-            <div class="card-content">
-                <ul>
-                    <li><a href="https://github.com/fabricio3g/tab-tracker" target="_blank"> <i class="fab fa-github"></i></a></li>
-                </ul>
-                <p>Exercise Tracker, made with NodeJs</p>
-            </div>
-        </div>
-
-        
+    </div>
 </div>
 
-<div class="about" id="about">
-    <div class="about-title">
-        <h1>About me</h1>
-    </div>
-    <div class="about-card">
-        <h2>Nestor Fabricio - Medrano</h2> <br/>
-
-        <p class="about-text">I'm currently studying at UNR- Facultad de Ciencias Medicas, during the covid Lockdown, i ended up learning web development, since i was young i love computer but i never know the existence of programing until the past to years</p>
-        <h2>Skills</h2>
-        <div class="about-skills">
-            <ul>
-                <li>Javascript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Vue</li>
-                <li>Node</li>
-                <li>C</li>
-                <li>Python</li>
-            </ul>
-        </div>
-        <h2>[ Education ]</h2>
-    </div>
-
-</div>
 </body>
 </html>
