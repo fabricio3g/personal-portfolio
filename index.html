@@ -17,7 +17,7 @@
     <div class="nav_wrapper">
         <div class="icon-name">[ DEV ]</div>
 
-        <div>
+        <div class="nav-items">
             <div class="hamburger-nav">&#x2630;</div>
             <ul class="nav_ul">
                 <li><a href="#home"><small>01. </small>Home</a></li>
@@ -146,6 +146,30 @@
 </div>
 
 
+<script>
 
+const navHamburger = document.querySelector('.hamburger-nav')
+const navUl = document.querySelector('.nav_ul')
+
+const showNavbar = e  =>{ 
+
+    navUl.classList.toggle('nav-hidden')
+    console.log('click')
+}
+
+const hideNavbar = (e) =>{
+    if(e.srcElement.tagName === "A")
+    {
+        navUl.classList.toggle('nav-hidden')
+    }
+
+}
+
+navUl.addEventListener('click', hideNavbar)
+
+
+navHamburger.addEventListener('click', showNavbar)
+
+</script>
 </body>
 </html>
