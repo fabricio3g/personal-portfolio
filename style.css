@@ -419,6 +419,7 @@ a{
 @media (max-width: 680px) {
   
     .home{
+        margin-top: 5rem;
         margin-bottom: 14rem;
     }  
     
