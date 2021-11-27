@@ -178,6 +178,7 @@ a{
     height: auto;
     justify-content: center;
     padding: 2rem;
+
 }
 
 .card{
@@ -188,6 +189,10 @@ a{
     width: 25rem;
     background: #FFFFFF;
     border: 1px solid #6060D8;
+    
+    -webkit-box-shadow: 12px 10px 0px -5px rgba(96,96,216,0.48);
+    -moz-box-shadow: 12px 10px 0px -5px rgba(96,96,216,0.48);
+    box-shadow: 12px 10px 0px -5px rgba(96,96,216,0.48);
     transition: ease-in .2s;
 }
 
@@ -195,6 +200,7 @@ a{
     -webkit-box-shadow: 12px 10px 0px 0px #6060D8;
     -moz-box-shadow: 12px 10px 0px 0px #6060D8;
     box-shadow: 12px 10px 0px 0px #6060D8;
+    transition: ease-in .2s;
     
 }
 
@@ -206,7 +212,7 @@ a{
     height: 20rem;    
     width: 100%;
     object-fit: cover;
-    border: 1px solid #6060d8;
+    border: 1px solid rgba(96,96,216,0.48);
     transition: ease-in .2s;
 }
 
