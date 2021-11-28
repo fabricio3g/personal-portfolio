@@ -11,8 +11,9 @@
 </head>
 <body>
 
-
 <div class="container-wrapper">
+
+
 
     <div class="nav_wrapper">
         <div class="icon-name">[ DEV ]</div>
@@ -23,7 +24,7 @@
                 <li><a href="#home"><small>01. </small>Home</a></li>
                 <li><a href="#portfolio"><small>02. </small>Portfolio</a></li>
                 <li><a href="#about"><small>03. </small>About Me</a></li>
-                <li><small>04. </small>Blog </li>
+                <li><a href="#blog"><small>04. </small>Blog</a></li>
                 <li class="choice_language">
                     Spanish
                 </li>
@@ -31,6 +32,10 @@
         </div>
         
     </div>
+
+
+<main class="main-container">
+
 
     <div class="home" id="home">
             <div class="home-information">
@@ -42,7 +47,7 @@
                         <li><a href="https://twitter.com/BigoBolson" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
                         
                     </ul>
-                <button class="home-resume-btn"><b>Download resume</b></button>
+                <button class="home-resume-btn"><b>Download CV</b></button>
             </div>
             <img class="image-home" src="./Avatar.jpg" alt="">
     </div>
@@ -137,24 +142,66 @@
             </div>
         </div>
 
+
+
+
+
+
+
+   
+   
     </div>
-    <footer>
-        <div>
-            <h2 class="footer-msg">Made by <a href="https://github.com/fabricio3g" target="_blank" rel="noopener noreferrer"><small>@fabricio3g</small></a></h2>
+</main>
+
+<div class="blog" id="blog">
+    <div class="blogs-container pagination">
+        <div class="card">
+            <h3>Making a vue aplication</h3>
+            <small>27-11-2021</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
         </div>
-    </footer>
+        <div class="card">
+            <h3>Making a vue aplication</h3>
+            <small>27-11-2021</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        </div>
+        <div class="card">
+            <h3>Making a vue aplication</h3>
+            <small>27-11-2021</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        </div>
+        <div class="card">
+            <h3>Making a vue aplication</h3>
+            <small>27-11-2021</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        </div>
+    </div>
+    
+    <div class="pagination-container">
+        <button class="pagination-left pagination-btn"><i class="fas fa-arrow-left"></i></button>
+        <div class="page">1 of 9</div>
+        <button class="pagination-right pagination-btn"><i class="fas fa-arrow-right"></i></button>
+    </div>
 </div>
 
+<footer>
+    <div>
+        <h2 class="footer-msg">Made by <a href="https://github.com/fabricio3g" target="_blank" rel="noopener noreferrer"><small>@fabricio3g</small></a></h2>
+    </div>
+</footer>
+
+
+</div>
 
 <script>
 
 const navHamburger = document.querySelector('.hamburger-nav')
 const navUl = document.querySelector('.nav_ul')
+const containerWrapper = document.querySelector('.main-container')
+const blog = document.querySelector('.blog')
 
 const showNavbar = e  =>{ 
-
     navUl.classList.toggle('nav-hidden')
-    console.log('click')
 }
 
 const hideNavbar = (e) =>{
@@ -165,10 +212,37 @@ const hideNavbar = (e) =>{
 
 }
 
+
+const checkHashandAndChange =()=> {
+    if(window.location.hash === '#blog'){
+        console.log(containerWrapper)
+        containerWrapper.style.display = 'none'
+        blog.style.display = 'block'
+    }
+    else{
+        containerWrapper.style.display = 'block'
+        blog.style.display = 'none'
+    }
+}
+
+
+
+
+
+if(performance.navigation.type == performance.navigation.TYPE_RELOAD)
+{
+    checkHashandAndChange()
+}
+
+
 navUl.addEventListener('click', hideNavbar)
 
 
 navHamburger.addEventListener('click', showNavbar)
+
+
+window.addEventListener('hashchange', checkHashandAndChange)
+
 
 </script>
 </body>
