@@ -197,8 +197,8 @@
 
 const navHamburger = document.querySelector('.hamburger-nav')
 const navUl = document.querySelector('.nav_ul')
-const containerWrapper = document.querySelector('.main-container')
-const blog = document.querySelector('.blog')
+const mainContainer = document.querySelector('.main-container')
+const blog = document.querySelector('#blog')
 
 const showNavbar = e  =>{ 
     navUl.classList.toggle('nav-hidden')
@@ -214,15 +214,19 @@ const hideNavbar = (e) =>{
 
 
 const checkHashandAndChange =()=> {
+    console.log('hash changed')
     if(window.location.hash === '#blog'){
-        console.log(containerWrapper)
-        containerWrapper.style.display = 'none'
+        console.log('if location hash ', window.location.hash === '#blog')
+        mainContainer.style.display = 'none'
         blog.style.display = 'block'
     }
     else{
-        containerWrapper.style.display = 'block'
+        console.log('else location hash ',window.location.hash === '#blog')
+        mainContainer.style.display = 'block'
         blog.style.display = 'none'
     }
+    
+    
 }
 
 
@@ -243,6 +247,8 @@ navHamburger.addEventListener('click', showNavbar)
 
 window.addEventListener('hashchange', checkHashandAndChange)
 
+
+window.onload = checkHashandAndChange()
 
 </script>
 </body>
