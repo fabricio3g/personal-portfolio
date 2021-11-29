@@ -297,6 +297,7 @@ a{
     background: #fff;
     border: 2px solid #6060D8;
     padding: 1.5rem;
+    transition: ease-in .2s;
     -webkit-box-shadow: 12px 10px 0px 0px #6060D8;
     -moz-box-shadow: 12px 10px 0px 0px #6060D8;
     box-shadow: 12px 10px 0px 0px #6060D8;
@@ -638,4 +639,14 @@ footer > div{
         padding: 2rem;
         width: 15rem;
     }
+}
+
+
+
+
+.under-construction{
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    background-color: #F5F9FC;
 }
