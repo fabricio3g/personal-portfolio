@@ -47,9 +47,9 @@
                         <li><a href="https://twitter.com/BigoBolson" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
                         
                     </ul>
-                <button class="home-resume-btn"><b>Download CV</b></button>
+                <button class="home_resume_btn"><b>Download CV</b></button>
             </div>
-            <img class="image-home" src="./Avatar.jpg" alt="">
+            <img class="image_home" src="./Avatar.jpg" alt="">
     </div>
 
 
@@ -159,11 +159,11 @@
 <div class="blog" id="blog">
     <div class="under-construction">Section under construction! 👷</div>
     <div class="blogs-container pagination">
-        <div class="card">
+        <a href="#id=213" class="card">
             <h3>Making a vue aplication</h3>
             <small>27-11-2021</small>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-        </div>
+        </a>
         <div class="card">
             <h3>Making a vue aplication</h3>
             <small>27-11-2021</small>
@@ -199,35 +199,49 @@
 
 <script>
 
+// HTML Elements
+
 const navHamburger = document.querySelector('.hamburger-nav')
 const navUl = document.querySelector('.nav_ul')
 const mainContainer = document.querySelector('.main-container')
 const blog = document.querySelector('#blog')
 
+
+
 const showNavbar = e  =>{ 
     navUl.classList.toggle('nav-hidden')
 }
+
+
+// Hide nav bar to show hamburger menu
 
 const hideNavbar = (e) =>{
     if(e.srcElement.tagName === "A")
     {
         navUl.classList.toggle('nav-hidden')
     }
-
 }
 
 
 const checkHashandAndChange =()=> {
-    console.log('hash changed')
     if(window.location.hash === '#blog'){
-        console.log('if location hash ', window.location.hash === '#blog')
+        // Dectect blog section and change view
+        window.scrollTo(0,0)
         mainContainer.style.display = 'none'
         blog.style.display = 'block'
     }
+    else if(/((#id=)+)/.test(window.location.hash)){
+        console.log(/^([#id=?]+)([0-9]*)/.test(window.location.hash))
+        console.log('Id tested')
+    }
     else{
-        console.log('else location hash ',window.location.hash === '#blog')
+        console.log('Disable blog part')
+        // Dectect if the user is viewing others sections
         mainContainer.style.display = 'block'
         blog.style.display = 'none'
+        // Detect section and jump directly to that part
+        const element = document.querySelector(location.hash)
+        element.scrollIntoView()
     }
     
     
@@ -235,7 +249,7 @@ const checkHashandAndChange =()=> {
 
 
 
-
+// Detect if the page has been reload and perform view change
 
 if(performance.navigation.type == performance.navigation.TYPE_RELOAD)
 {
@@ -243,15 +257,14 @@ if(performance.navigation.type == performance.navigation.TYPE_RELOAD)
 }
 
 
+// Event Listeners
+
 navUl.addEventListener('click', hideNavbar)
-
-
 navHamburger.addEventListener('click', showNavbar)
 
+// Window events
 
 window.addEventListener('hashchange', checkHashandAndChange)
-
-
 window.onload = checkHashandAndChange()
 
 </script>
