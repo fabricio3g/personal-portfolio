@@ -89,14 +89,14 @@ a{
     flex-direction: row;
 }
 
-.home-information{
+.home_information{
     display: flex;
     width: 20rem;
     justify-content: center;
     flex-direction: column;
 }
 
-.image-home{
+.image_home{
     margin-top: 1rem;
     margin-left: 5rem;
     width: 15rem;
@@ -131,7 +131,7 @@ a{
     cursor: pointer;
 }
 
-.home-resume-btn{
+.home_resume_btn{
     border: none;
     background: #FF6584;
     color: white;
@@ -142,7 +142,7 @@ a{
     transition: ease-in .2s;
 }
 
-.home-resume-btn:hover{
+.home_resume_btn:hover{
     background: #6060D8;
     cursor: pointer;
     transition: ease-in .2s;
@@ -540,7 +540,7 @@ footer > div{
     
     .home-information > p{
         text-align: start;
-       font-size: 14px !important;
+       font-size: 1.3rem !important;
        margin: 2rem auto 0 0;
 
     }
@@ -548,17 +548,17 @@ footer > div{
         width: 4.5rem;
         height: 1.5rem;
     }
-    .image-home{
+    .image_home{
         height: 10rem;
         width: 10rem;
         margin: 0 auto;
     }
 
     .about-card > h2{
-        font-size: 12px;
+        font-size: 20px;
     }
     .about-skills > ul > li{
-        font-size: 15px;
+        font-size: 12px;
         padding: .5rem;
     }
     .card-content > h1 , p{
