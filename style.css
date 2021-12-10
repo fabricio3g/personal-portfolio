@@ -378,12 +378,18 @@ a{
 
 .about-text > h2{
     text-align: center;
+    background: #6060D8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #F5F9FC;
 }
 
 .about-text > p{
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px;
+    text-align: justify;
+    max-width: 800px;
+    color: #1E1E5D;
+    background: #ffffff;
+    padding: 1rem;
 }
 
 .cv{
