@@ -388,6 +388,7 @@ a{
     text-align: justify;
     max-width: 800px;
     color: #1E1E5D;
+    margin:0 auto;
     background: #ffffff;
     padding: 1rem;
 }
